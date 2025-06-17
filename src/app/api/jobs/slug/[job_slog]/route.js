@@ -1,4 +1,4 @@
-import { DatabaseFunctions } from "@/app/database/databaseFunctions";
+import { DatabaseFunctions } from "../../../../../database/databaseFunctions";
 import { NextResponse } from "next/server";
 
 export async function GET(req, { params }) {

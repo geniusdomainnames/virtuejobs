@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import db from "../../database/db.js";
-import { configDotenv } from "dotenv";
-import { DatabaseFunctions } from "@/app/database/databaseFunctions.js";
+
+
+import { DatabaseFunctions } from "../../../database/databaseFunctions";
 
 export async function GET(request) {
   console.log("Hitting the Api endpoint")

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { DatabaseFunctions } from "@/app/database/databaseFunctions";
+import { DatabaseFunctions } from "../../../../../database/databaseFunctions";
 
 // app/api/some-endpoint/route.js or route.ts
 
