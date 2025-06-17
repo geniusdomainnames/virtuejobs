@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffffb9;
+  --foreground: #021309;
 }
 
 @theme inline {
@@ -23,4 +23,105 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-container{
+  @apply w-full  flex justify-center px-6 lg:px-0
+}
+.section-container-inner{
+  @apply w-full  max-w-[100%] lg:max-w-[60%]
+}
+.nav-bar{
+  @apply bg-green-700 text-green-100 text-2xl py-2
+}
+.active-nav{
+  @apply border-b-2 px-3 py-1.5 lg:px-6 lg:py-3 text-green-100 font-bold
+}
+.disabled-nav{
+  @apply  bg-red-600 text-white
+}
+
+
+.nav-link{
+  @apply  text-green-300 hover:text-green-600 transition-colors
+}
+
+.error{
+  @apply text-red-800 text-xs
+}
+
+.input{
+  @apply  text-lg bg-white py-4 w-full p-2 border border-green-600 rounded-md focus:outline-green-500 focus:ring-rose-200
+}
+.btn-primary{
+ @apply bg-green-800 text-white px-4 py-2 rounded-md hover:bg-green-950 transition-colors
+
+}
+
+
+
+/* Blog Post Styling */
+.blog-post {
+  @apply max-w-4xl mx-auto px-4 py-8 lg:leading-9 leading-6  text-gray-500 text-base lg:text-xl ;
+}
+
+.blog-post h1 {
+  @apply text-3xl md:text-4xl font-bold mb-8 text-green-800 dark:text-green-300;
+}
+
+.blog-post h2 {
+  @apply text-2xl md:text-3xl font-bold mt-6 mb-4 text-green-800 dark:text-green-400;
+}
+
+.blog-post h3 {
+  @apply text-xl md:text-2xl font-bold mt-6 mb-3 text-green-700 dark:text-green-500;
+}
+
+.blog-post h4 {
+  @apply text-lg md:text-xl font-bold mt-3 mb-2 text-green-700 dark:text-green-400;
+}
+
+.blog-post p {
+  @apply   dark:text-gray-200 mb-4 text-justify;
+}
+
+.blog-post ul, .blog-post ol {
+  @apply mb-3 pl-6;
+}
+
+.blog-post ul {
+  @apply list-disc;
+}
+
+.blog-post ol {
+  @apply list-decimal;
+}
+
+.blog-post li {
+  @apply mb-2  dark:text-gray-200;
+}
+
+.blog-post strong {
+  @apply font-semibold text-green-800 dark:text-green-400;
+}
+
+.blog-post em {
+  @apply italic;
+}
+
+.blog-post a {
+  @apply text-green-600 dark:text-green-300 font-medium underline hover:text-green-800 dark:hover:text-green-400 transition-colors duration-200;
+}
+
+.blog-post a:hover {
+  @apply no-underline;
+}
+
+
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .blog-post {
+    @apply text-gray-100;
+  }
 }
