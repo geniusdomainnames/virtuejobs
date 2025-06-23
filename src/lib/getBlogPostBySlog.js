@@ -19,16 +19,14 @@ export async function getBlogPostBySlog(blog_post_slog) {
     
 
 
-console.log(`BLOG POST TITLE: ${blogPost?.title}`)
+// console.log(`BLOG POST TITLE: ${blogPost?.title}`)
      const {content, data}= matter(blogPost.content)
-
     blogPost['matter_content']= content
     blogPost['matter_data']= data
 
     
-
-
-  const blog_comments = await DatabaseFunctions.GetBlogCommentsByPostId(blogPost.post_id)
+  //const blog_comments = await DatabaseFunctions.GetBlogCommentsByPostId(blogPost.post_id)
+  const blog_comments=[]
 
   blogPost['blog_comments']=blog_comments
   let returnData = [];
