@@ -1,4 +1,3 @@
-// app/blog/[post_slog]/page.tsx or .jsx
 import { getBlogPostBySlog } from '@/lib/getBlogPostBySlog'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
@@ -8,20 +7,23 @@ import { LuNotebookPen } from "react-icons/lu";
 import BlogCommentForm from '@/app/(main)/components/BlogCommentForm';
 import { FaUser } from "react-icons/fa";
 
-// Load font
+    // Load font
 const rowdies = Rowdies({
   subsets: ['latin'],
   weight: ['300', '400', '700'],
 });
 
+
 // Dynamic Metadata Function
 export async function generateMetadata({ params }) {
-  const blog_post_response = await getBlogPostBySlog(params.post_slog);
+   let postparams = await params
+
+  const blog_post_response = await getBlogPostBySlog(postparams.postslog);
   const blogpost = blog_post_response.data[0];
 
   const title = blogpost.title;
   const description = blogpost.excerpt
-  const url = `https://${process.env.DOMAIN_NAME}/blog/post/${params.post_slog}`;
+  const url = `https://${process.env.DOMAIN_NAME}/blog/post/${postparams.postslog}`;
 
   // JSON-LD structured data
   const jsonLd = {
@@ -88,18 +90,30 @@ export async function generateMetadata({ params }) {
     ),
   };
 }
- 
 
-// Page Component
-async function page({ params }) {
-  const blog_post_response = await getBlogPostBySlog(params.post_slog);
-  const blogpost = blog_post_response.data[0];
-  console.log(blogpost)
+
+
+
+
+
+
+
+export default async function page({ params }) {
+
+    let postparams = await params
+
+console.log(postparams)
+
+let blog_post_response = await getBlogPostBySlog(postparams.postslog)
+
+
+console.log(blog_post_response)
+   const blogpost = blog_post_response.data[0];
+//   console.log(blogpost)
   let blog_comments=blogpost.blog_comments
 
- 
-
-  return (
+    return (
+      
     <section>
       <div className="lg:w-[50%] mx-auto p-6 bg-white rounded-lg w-full">
         <article>
@@ -182,5 +196,3 @@ async function page({ params }) {
     </section>
   );
 }
-
-export default page;

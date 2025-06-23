@@ -6,7 +6,7 @@ import { CreateBlogCommentsTable } from "@/database/tableCreator";
 
 
 export async function getBlogPostBySlog(blog_post_slog) {
-    await CreateBlogCommentsTable();
+    
   console.log("Fetching job with slug:", blog_post_slog);
 
   const blog_post_response = await DatabaseFunctions.getPostBySlug(blog_post_slog);

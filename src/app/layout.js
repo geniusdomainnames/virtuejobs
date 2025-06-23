@@ -3,7 +3,7 @@ import "./globals.css";
 import Navigation from "./(main)/components/Navigation";
 import Footer from "./(main)/components/Footer";
 import { Toaster } from "react-hot-toast";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata = {
   title: "Virtue Jobs – Find Jobs Near You",
   description: "Discover local job opportunities in your city. Apply quickly and get hired faster with Virtue Jobs.",
