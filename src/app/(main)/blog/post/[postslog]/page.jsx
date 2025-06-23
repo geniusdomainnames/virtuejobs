@@ -14,82 +14,82 @@ const rowdies = Rowdies({
 });
 
 
-// Dynamic Metadata Function
-export async function generateMetadata({ params }) {
-   let postparams = await params
+// // Dynamic Metadata Function
+// export async function generateMetadata({ params }) {
+//    let postparams = await params
 
-  const blog_post_response = await getBlogPostBySlog(postparams.postslog);
-  const blogpost = blog_post_response.data[0];
+//   const blog_post_response = await getBlogPostBySlog(postparams.postslog);
+//   const blogpost = blog_post_response.data[0];
 
-  const title = blogpost.title;
-  const description = blogpost.excerpt
-  const url = `https://${process.env.DOMAIN_NAME}/blog/post/${postparams.postslog}`;
+//   const title = blogpost.title;
+//   const description = blogpost.excerpt
+//   const url = `https://${process.env.DOMAIN_NAME}/blog/post/${postparams.postslog}`;
 
-  // JSON-LD structured data
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": url
-    },
-    "headline": title,
-    "description": description,
-    "author": {
-      "@type": "Person",
-      "name": process.env.DEFAULT_WRITER
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": process.env.WEBSITE_NAME,
-      // Optionally add your logo URL here:
-      // "logo": {
-      //   "@type": "ImageObject",
-      //   "url": "https://yourdomain.com/logo.png"
-      // }
-    },
-    "datePublished": blogpost.created_at,
-    "dateModified": blogpost.updated_at
-  };
+//   // JSON-LD structured data
+//   const jsonLd = {
+//     "@context": "https://schema.org",
+//     "@type": "Article",
+//     "mainEntityOfPage": {
+//       "@type": "WebPage",
+//       "@id": url
+//     },
+//     "headline": title,
+//     "description": description,
+//     "author": {
+//       "@type": "Person",
+//       "name": process.env.DEFAULT_WRITER
+//     },
+//     "publisher": {
+//       "@type": "Organization",
+//       "name": process.env.WEBSITE_NAME,
+//       // Optionally add your logo URL here:
+//       // "logo": {
+//       //   "@type": "ImageObject",
+//       //   "url": "https://yourdomain.com/logo.png"
+//       // }
+//     },
+//     "datePublished": blogpost.created_at,
+//     "dateModified": blogpost.updated_at
+//   };
 
-  return {
-    title,
-    description,
-    keywords: [
-      blogpost.category,
-      ...blogpost.keywords,
-    ],
-    authors: [{ name: process.env.DEFAULT_WRITER }],
-    alternates: {
-      canonical: url,
-    },
-    openGraph: {
-      title,
-      description,
-      type: 'article',
-      url,
-      siteName: process.env.WEBSITE_NAME,
-      locale: 'en_US',
-      publishedTime: blogpost.created_at,
-      modifiedTime: blogpost.updated_at,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      creator: '@yourtwitterhandle',
-    },
-    metadataBase: new URL(`https://${process.env.DOMAIN_NAME}`),
+//   return {
+//     title,
+//     description,
+//     keywords: [
+//       blogpost.category,
+//       ...blogpost.keywords,
+//     ],
+//     authors: [{ name: process.env.DEFAULT_WRITER }],
+//     alternates: {
+//       canonical: url,
+//     },
+//     openGraph: {
+//       title,
+//       description,
+//       type: 'article',
+//       url,
+//       siteName: process.env.WEBSITE_NAME,
+//       locale: 'en_US',
+//       publishedTime: blogpost.created_at,
+//       modifiedTime: blogpost.updated_at,
+//     },
+//     twitter: {
+//       card: 'summary_large_image',
+//       title,
+//       description,
+//       creator: '@yourtwitterhandle',
+//     },
+//     metadataBase: new URL(`https://${process.env.DOMAIN_NAME}`),
 
-    // This injects JSON-LD script into the head
-    other: (
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-    ),
-  };
-}
+//     // This injects JSON-LD script into the head
+//     other: (
+//       <script
+//         type="application/ld+json"
+//         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+//       />
+//     ),
+//   };
+// }
 
 
 
