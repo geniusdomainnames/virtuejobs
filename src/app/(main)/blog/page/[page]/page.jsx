@@ -4,6 +4,7 @@ import BlogListItem from '@/app/(main)/components/BlogListItem';
 import Head from 'next/head';
 import BlogNav from '@/app/(main)/components/BlogNav';
 
+
 export const metadata = {
   title: 'Virtue Jobs - Career and Job Blog',
   description: 'Explore our collection of career advice, job search tips, and industry insights. Stay updated with the latest trends in employment and professional development.',
