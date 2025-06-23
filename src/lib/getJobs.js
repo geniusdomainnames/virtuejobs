@@ -1,4 +1,5 @@
 import db from "../database/db";
+import { CreateTables } from "@/database/tableCreator";
 
 import { DatabaseFunctions } from "../database/databaseFunctions";
 
@@ -8,6 +9,9 @@ export async function getJobs(
   selectsearchparametervalue,
   usercountry
 ) {
+
+  //await CreateTables()
+
   let limit = 25;
   let page = requestedpage || 1;
   const offset = (page - 1) * limit;
