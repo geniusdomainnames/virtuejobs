@@ -4,6 +4,13 @@ import Navigation from "./(main)/components/Navigation";
 import Footer from "./(main)/components/Footer";
 import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Outfit } from 'next/font/google';
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit',
+  display: 'swap',
+});
 export const metadata = {
   title: "Virtue Jobs – Find Jobs Near You",
   description: "Discover local job opportunities in your city. Apply quickly and get hired faster with Virtue Jobs.",
@@ -55,7 +62,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={outfit.variable}>
       <body>
         <header>
           <Navigation/>

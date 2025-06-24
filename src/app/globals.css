@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+body {
+  background: #ffffffb9;
+  font-family: Outfit;
+}
+
 /* :root {
   --background: #;
   --foreground: #021309;
@@ -19,13 +24,6 @@
     --foreground: #ededed;
   }
 } */
-
-body {
-  background: #ffffffb9;
-  /* color: var(--foreground); */
-  /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: Outfit;
-}
 
 .section-container{
   @apply w-full  flex justify-center px-6 lg:px-0
