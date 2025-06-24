@@ -4,7 +4,9 @@ import Navigation from "./(main)/components/Navigation";
 import Footer from "./(main)/components/Footer";
 import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 import { Outfit } from 'next/font/google';
+
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -77,6 +79,8 @@ export default function RootLayout({ children }) {
               position: 'top-center',
             }}
           />
+          <SpeedInsights/>
+          <Analytics/>
       </body>
     </html>
   );
