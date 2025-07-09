@@ -1,18 +1,8 @@
 import React from 'react';
 import toast from 'react-hot-toast';
+import { countryData } from '@/utils/CountryData';
 
-const countries = [
-    "United States",
-    "Canada",
-    "United Kingdom",
-    "Australia",
-    "Germany",
-    "France",
-    "Japan",
-    "China",
-    "India",
-    "Brazil",
-];
+const countries =countryData.map(country => country.name).sort();
 
 const months = [
     "January", "February", "March", "April", "May", "June",

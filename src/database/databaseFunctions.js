@@ -704,4 +704,26 @@ export class DatabaseFunctions {
       throw error;
     }
   }
+
+ static async getAllBlogSlugs() {
+  
+ //let tablename =process.env.BLOG_TABLE
+ let tablename ="jobville_blog_posts"
+
+ console.log(tablename)
+
+    const query = `SELECT slug FROM ${tablename} ORDER BY post_id DESC;`;
+
+
+    try {
+      const result = await db.query(query);
+      return result.rows;
+    } catch (error) {
+      console.error("Error retrieving jobs:", error.message);
+      throw error;
+    }
+  }
+
+
+
 }

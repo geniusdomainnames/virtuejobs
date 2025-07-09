@@ -55,7 +55,7 @@ export async function getJobs(
       result_accuracy: result.result_accuracy,
     };
   } catch (error) {
-    console.error("Error fetching jobs:", error);
+    console.log("Error fetching jobs:", error);
     return {
       success: false,
       data: [],

@@ -1,6 +1,6 @@
 
 import { DatabaseFunctions } from "@/database/databaseFunctions";
-import * as matter from 'gray-matter';
+import matter from 'gray-matter';
 import { generateMetadata } from "./generateBlogPostMetaData";
 import { CreateBlogCommentsTable } from "@/database/tableCreator";
 

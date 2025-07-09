@@ -1,9 +1,9 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 
 body {
   background: #ffffffb9;
-  font-family: Outfit;
+  
 }
 
 /* :root {
@@ -62,7 +62,7 @@ body {
 
 /* Blog Post Styling */
 .blog-post {
-  @apply max-w-4xl mx-auto px-4 py-8 lg:leading-9 leading-6  text-gray-500 text-base lg:text-xl ;
+  @apply max-w-4xl mx-auto px-4 py-8 lg:leading-9 leading-6  text-gray-600 text-base lg:text-xl ;
 }
 
 .blog-post h1 {
