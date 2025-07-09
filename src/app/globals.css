@@ -6,24 +6,7 @@ body {
   
 }
 
-/* :root {
-  --background: #;
-  --foreground: #021309;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 .section-container{
   @apply w-full  flex justify-center px-6 lg:px-0
@@ -66,7 +49,7 @@ body {
 }
 
 .blog-post h1 {
-  @apply text-3xl md:text-4xl font-bold mb-8 text-green-800 dark:text-green-300;
+  @apply text-3xl md:text-4xl font-bold mb-8 text-green-800 dark:text-green-500;
 }
 
 .blog-post h2 {
@@ -82,7 +65,7 @@ body {
 }
 
 .blog-post p {
-  @apply   dark:text-gray-200 mb-4 text-justify;
+  @apply   text-gray-500 mb-4 text-justify;
 }
 
 .blog-post ul, .blog-post ol {
@@ -98,7 +81,7 @@ body {
 }
 
 .blog-post li {
-  @apply mb-2  dark:text-gray-200;
+  @apply mb-2 text-gray-500;
 }
 
 .blog-post strong {
@@ -122,6 +105,6 @@ body {
 /* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
   .blog-post {
-    @apply text-gray-100;
+    @apply text-gray-500;
   }
 }

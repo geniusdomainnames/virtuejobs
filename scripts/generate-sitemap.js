@@ -15,7 +15,7 @@ function generateSitemapXml(routes) {
   const urls = routes
     .map(({ loc, lastmod }) => `
     <url>
-      <loc>https://${process.env.DOMAIN_NAME}${loc}</loc>
+      <loc>https://${domainname}${loc}</loc>
       <lastmod>${lastmod}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -53,7 +53,7 @@ async function notifyGoogle() {
   try {
     const posts = await DatabaseFunctions.getAllBlogSlugs();
 
-    const dynamicRoutes = posts.map((post) => ({
+    const blogRoutes = posts.map((post) => ({
       loc: `/blog/post/${post.slug}`,
       lastmod: post.updatedAt
         ? new Date(post.updatedAt).toISOString()
@@ -66,7 +66,7 @@ async function notifyGoogle() {
       { loc: '/contact', lastmod: new Date().toISOString() },
     ];
 
-    const allRoutes = [...staticRoutes, ...dynamicRoutes];
+    const allRoutes = [...staticRoutes, ...blogRoutes];
     const sitemapXml = generateSitemapXml(allRoutes);
 
     const sitemapPath = path.join(__dirname, '../public/sitemap.xml');
