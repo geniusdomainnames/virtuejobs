@@ -52,6 +52,7 @@ export default async function Home({ params, searchParams }) {
             page={page}
           />
         </Suspense>
+     
         <div className="mx-auto">
           {locationData?.data?.flag && (
             <div className="flex gap-2 py-2 px-3 border border-gray-300 rounded-full mt-3 ">
