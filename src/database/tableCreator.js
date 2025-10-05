@@ -2,10 +2,10 @@ import { Client } from "pg";
 
 // Create a single client instance
 const client = new Client({
-  host: "aws-0-us-east-1.pooler.supabase.com",
+  host: "aws-1-eu-north-1.pooler.supabase.com",
   port: "6543",
   database: "postgres",
-  user: "postgres.llwhgcmlpanhbgzkjznm",
+  user: "postgres.yuatnqikzrmwbkzjycyz",
   pool_mode: "transaction",
   password: "@Chimsyboy2275",
 });
@@ -160,11 +160,10 @@ export async function CreateTables() {
     await client.connect();
    
 
-    // await CreateCommentsTable();
-    // await CreateJobsTable();
-    // a
-    // await CreateBlogTable();
-    // await CreateBlogCommentsTable();
+    await CreateCommentsTable();
+    await CreateJobsTable();
+    await CreateBlogTable();
+    await CreateBlogCommentsTable();
   } catch (err) {
     console.error("Error in CreateTables:", err);
   } finally {

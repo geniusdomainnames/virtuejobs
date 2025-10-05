@@ -8,6 +8,7 @@ import Link from "next/link";
 import JobFilterWrapper from "../../(main)/components/JobFilterWrapper";
 import { Suspense } from "react";
 import { headers } from "next/headers";
+import { CreateTables } from "@/database/tableCreator";
 
 const jobsearchparameters = [
   "All Jobs",
@@ -25,6 +26,9 @@ function getFilterFromSearchParams(searchParams) {
 }
 
 export default async function Home({ params, searchParams }) {
+
+  //await CreateTables();
+
   const page = parseInt(await(params.page)) || 1;
   let { selectedJobSearchParameter, selectedJobSearchParameterValue } = getFilterFromSearchParams(searchParams);
 
