@@ -16,8 +16,8 @@ const outfit = Outfit({
 export const metadata = {
   title: "Virtue Jobs – Find Jobs Near You",
   description: "Discover local job opportunities in your city. Apply quickly and get hired faster with Virtue Jobs.",
-  keywords: ["job listings near me","jobs", "local jobs", "nigerian jobs","lagos jobs","abuja jobs",  "US jobs", "UK jobs", "Canada jobs", "Australia jobs", "New Zealand jobs",   "Virtue Jobs", "apply for jobs", "jobs near me", "job listings near me","remote jobs"],
-  authors: [{ name: "Chima Olegeme", url: "https://virtuejobs.com" }],
+  keywords: ["job listings near me","jobs", "local jobs", "nigerian jobs","lagos jobs","abuja jobs","Virtue Jobs", "apply for jobs", "jobs near me", "job listings near me","remote jobs"],
+  authors: [{ name: "Virtue Jobs", url: "https://virtuejobs.com" }],
   creator: "Chima Longy",
   publisher: "Virtue Jobs",
   metadataBase: new URL("https://virtuejobs.com"),

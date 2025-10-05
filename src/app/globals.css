@@ -65,7 +65,7 @@ body {
 }
 
 .blog-post p {
-  @apply   text-gray-500 mb-4 text-justify;
+  @apply   text-gray-600 mb-4 text-justify;
 }
 
 .blog-post ul, .blog-post ol {
@@ -103,8 +103,8 @@ body {
 
 
 /* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .blog-post {
     @apply text-gray-500;
   }
-}
+} */
