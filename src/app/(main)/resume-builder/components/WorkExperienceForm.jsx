@@ -1,8 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
-import { countryData } from '@/utils/CountryData';
 
-const countries =countryData.map(country => country.name).sort();
 
 const months = [
     "January", "February", "March", "April", "May", "June",
@@ -13,6 +11,21 @@ const currentYear = new Date().getFullYear();
 const years = Array.from({ length: 50 }, (_, i) => currentYear - i);
 
 const WorkExperienceForm = ({ formData, handleChange, handleSubmit, onBack, isEditing }) => {
+    const [countries, setCountries] = useState([]);
+
+    useEffect(() => {
+        let mounted = true;
+        (async () => {
+            try {
+                const mod = await import('@/utils/CountryData');
+                const names = (mod.countryData || []).map(c => c.name).sort();
+                if (mounted) setCountries(names);
+            } catch (e) {
+                if (mounted) setCountries([]);
+            }
+        })();
+        return () => { mounted = false; };
+    }, []);
     const validateAndSubmit = (e) => {
         e.preventDefault();
         

@@ -41,6 +41,9 @@ export default async function Home({ params, searchParams }) {
     selectedJobSearchParameterValue,
     locationData?.data?.country
   );
+
+  console.log("laoding data")
+  console.log(jobDataResponse.data)
   const jobList = jobDataResponse.success ? jobDataResponse.data : [];
   const resultAccuracy = jobDataResponse.result_accuracy;
   const locationBasedResult = jobDataResponse.location_based_result;
@@ -149,7 +152,7 @@ export default async function Home({ params, searchParams }) {
             )}
           </div>
         )}
-        {jobList.length === 25 && (
+        {jobList.length === 15 && (
           <PageNav 
             page={page} 
             filter={selectedJobSearchParameter !== jobsearchparameters[0] ? selectedJobSearchParameter : undefined}

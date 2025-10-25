@@ -12,7 +12,7 @@ export async function getJobs(
 
   //await CreateTables()
 
-  let limit = 25;
+  let limit = 15;
   let page = requestedpage || 1;
   const offset = (page - 1) * limit;
   let location_based_results = false;

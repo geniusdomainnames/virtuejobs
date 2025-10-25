@@ -10,7 +10,8 @@ const db = new Pool({
   // pool_mode: "transaction",
   // password: process.env.DATABASE_PASSWORD,
 
-    host: "aws-1-eu-north-1.pooler.supabase.com",
+    //connectionString: process.env.DATABASE_URL,
+  host: "aws-1-eu-north-1.pooler.supabase.com",
   port: "6543",
   database: "postgres",
   user: "postgres.yuatnqikzrmwbkzjycyz",

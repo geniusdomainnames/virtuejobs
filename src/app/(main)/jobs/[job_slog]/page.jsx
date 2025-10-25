@@ -35,6 +35,7 @@ export default async function JobDetailsPage({ params }) {
   //console.log(jobDataResponse)
 
   if (jobDataResponse.success) {
+    
     job = jobDataResponse.data
     similar_jobs = jobDataResponse.similar_jobs
     job_comments = jobDataResponse.comments
