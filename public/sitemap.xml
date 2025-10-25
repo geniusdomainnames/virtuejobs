@@ -1,39 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-    <url>
-      <loc>https://virtuejobs.com/</loc>
-      <lastmod>2025-07-09T11:52:08.539Z</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://virtuejobs.com/about</loc>
-      <lastmod>2025-07-09T11:52:08.539Z</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://virtuejobs.com/contact</loc>
-      <lastmod>2025-07-09T11:52:08.539Z</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://virtuejobs.com/blog/post/how-to-find-your-career-passion-in-a-noisy-world</loc>
-      <lastmod>2025-07-09T11:52:08.536Z</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://virtuejobs.com/blog/post/the-difference-between-a-job-and-a-career-and-why-it-matters</loc>
-      <lastmod>2025-07-09T11:52:08.539Z</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
+  <url>
+    <loc>https://virtuejobs.com/</loc>
+    <lastmod>2025-10-25T20:13:03.176Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/about</loc>
+    <lastmod>2025-10-25T20:13:03.176Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/contact</loc>
+    <lastmod>2025-10-25T20:13:03.176Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/subsea-project-engineer-job-at-deep-water-consultancy</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/maintenance-planner-scheduler-iii</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/graduate-project-subsea-engineer</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/channel-digital-manager-position-at-transsion-holdings</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/mechanical-technician-iii-at-nautilus-nigeria-engineering-and-construction-limited-nnec---3-openings</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/electrical-engineering-technician-iii-position-at-nautilus-nigeria-engineering</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/account-receivables-debt-recovery-officer-position-at-echolab-laboratory-radiology-services</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/medical-warehouse-quality-assurance-officer-position-at-international-committee-of-the-red-cross-icrc</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/country-it-head</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/coren-certified-electrical-engineer-at-el-bukelz-nigeria-limited</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/assistant-and-information-management-im-officer-position-at-international-committee-of-the-red-cross-icrc</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/farm-manager---poultry-at-olam-agri</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/coren-certified-civil-engineer-rigid-pavement-road-at-el-bukelz-nigeria-limited</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/application-lead---it-application-support-at-olam-agri</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/officer-it-risk-internal-control-at-stanbic-ibtc-bank</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/maintenance-manager-at-united-geophysical-nigeria-limited</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/computer-ict-tutor-at-taidob-college</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/internal-control-manager-at-genesis-group-nigeria</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/construction-supervision-manager-at-transsion-holdings</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/it-specialist-at-total-data-limited</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/security-manager-at-apm-terminals</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/cathodic-protection-inspector-job-at-oilserv-limited</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/head-of-marketing-at-tilden-development-limited</loc>
+    <lastmod>2025-10-25T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://virtuejobs.com/jobs/mechanical-engineer---machine-operators-at-apple-and-pears-limited</loc>
+    <lastmod>2025-10-22T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

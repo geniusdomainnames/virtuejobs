@@ -11,7 +11,11 @@ import generateSitemapToFile from '../src/lib/sitemap.js'
   try {
     const result = await generateSitemapToFile();
     if (result.success) {
-      console.log(`✅ Sitemap generated at ${result.path} (${result.count} routes)`);
+      console.log(`✅ Sitemap generated (${result.count} routes)`);
+      if (result.files && result.files.length) {
+        console.log('Generated files:');
+        result.files.forEach((f) => console.log('  -', f.path, f.count ? `(${f.count} urls)` : ''));
+      }
     } else {
       console.error('❌ Failed to generate sitemap:', result.error);
       process.exitCode = 1;

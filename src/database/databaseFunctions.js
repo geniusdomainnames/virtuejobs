@@ -223,6 +223,12 @@ export class DatabaseFunctions {
   }
 
   static async getAllJobs() {
+    // Defensive: if DATABASE_TABLE is not set, avoid running a malformed query
+    if (!process.env.DATABASE_TABLE) {
+      console.warn("DATABASE_TABLE environment variable is not set. getAllJobs() will return an empty array.");
+      return [];
+    }
+
     const query = `SELECT * FROM ${process.env.DATABASE_TABLE} ORDER BY job_id DESC;`;
 
     try {
@@ -708,7 +714,7 @@ export class DatabaseFunctions {
  static async getAllBlogSlugs() {
   
  //let tablename =process.env.BLOG_TABLE
- let tablename ="jobville_blog_posts"
+ let tablename ="virtuejob_blog_posts"
 
  console.log(tablename)
 

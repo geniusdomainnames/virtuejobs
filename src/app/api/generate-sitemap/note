@@ -1,0 +1,5 @@
+
+await fetch('/api/generate-sitemap', {
+  method: 'POST',
+  headers: { 'x-sitemap-key': 'super-secret-key-123' }
+});
