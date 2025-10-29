@@ -6,7 +6,6 @@ import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/next"
 import { Outfit } from 'next/font/google';
-import PopunderAd from "./(main)/components/Banners/PopounderAd";
 
 
 const outfit = Outfit({
@@ -82,7 +81,6 @@ export default function RootLayout({ children }) {
           />
           <SpeedInsights/>
           <Analytics/>
-          <PopunderAd/>
       </body>
     </html>
   );
