@@ -39,11 +39,11 @@ export default function JobListItem({job}) {
         {job.job_industry}
         </div>
         <div className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm w-full md:w-auto text-center md:text-left">
-          {job.job_type.join(" and ")}
+          {Array.isArray(job?.job_type) ? job.job_type.join(" and ") : (job?.job_type ?? "")}
         </div>
         <div className="px-3 py-1 flex items-center gap-1 text-gray-600 border border-gray-300 text-sm rounded-full w-full md:w-auto justify-center md:justify-start">
           <HiLocationMarker className="w-4 h-4" />
-          <p>{job.job_location[0]}</p>
+          <p>{Array.isArray(job?.job_location) ? job.job_location[0] : (job?.job_location ?? "")}</p>
         </div>
       </div>
 
